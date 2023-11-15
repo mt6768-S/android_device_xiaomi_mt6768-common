@@ -66,6 +66,7 @@ function blob_fixup {
             ;;
 	vendor/bin/mtk_agpsd)
            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v32.so" "${2}"
+           "${PATCHELF}" --replace-needed "libssl.so" "libssl-v32.so" "${2}"
             ;;
         lib64/libshowlogo.so)
             "${PATCHELF}" --add-needed "libshim_showlogo.so" "${2}"
