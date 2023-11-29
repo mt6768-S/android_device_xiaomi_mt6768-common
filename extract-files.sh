@@ -77,6 +77,11 @@ function blob_fixup {
         lib64/libshowlogo.so)
             "${PATCHELF}" --add-needed "libshim_showlogo.so" "${2}"
             ;;
+	vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
+            ;&
+        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
+            "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
+            ;;
         vendor/lib/hw/vendor.mediatek.hardware.pq@2.13-impl.so)
             ;&
         vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so)
