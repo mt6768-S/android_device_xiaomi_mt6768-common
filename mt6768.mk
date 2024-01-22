@@ -29,7 +29,6 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
-    libalsautils_legacy \
     libaudiofoundation.vendor \
     libunwindstack.vendor \
     libtinycompress \
