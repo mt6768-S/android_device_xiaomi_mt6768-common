@@ -31,11 +31,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libalsautils_legacy \
     libaudiofoundation.vendor \
+    libunwindstack.vendor \
     libtinycompress \
     tinymix \
 
 PRODUCT_PACKAGES += \
     MtkInCallService
+
+PRODUCT_PACKAGES += \
+    libcamera_metadata.vendor \
+    libexif.vendor \
+    libpng.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -105,6 +111,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.4.vendor
 
+PRODUCT_PACKAGES += \
+    libutilscallstack.vendor
+
 # Disable SF configstore
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -156,6 +165,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss-V1-ndk_platform.vendor
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libexpat.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -411,6 +424,9 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-wrapper \
     android.hardware.wifi-service
+
+PRODUCT_PACKAGES += \
+    libnetutils.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
