@@ -272,7 +272,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.power-V2-ndk_platform.vendor \
-    android.hardware.power@1.3.vendor
+    android.hardware.power@1.3.vendor \
+    libmtkperf_client_vendor \
+    libmtkperf_client
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -380,6 +382,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek \
+    hardware/mediatek/libmtkperf_client \
     hardware/xiaomi \
     $(LOCAL_PATH)
 
