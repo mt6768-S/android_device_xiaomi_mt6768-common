@@ -630,10 +630,8 @@ vendor/lib64/hw/gatekeeper.beanpod.so
 vendor/lib64/hw/libSoftGatekeeper.so
 
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/bin/bp_kmsetkey_ca
-vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc
 vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
 vendor/lib/hw/kmsetkey.beanpod.so
@@ -1115,15 +1113,19 @@ vendor/etc/MNL_Config.xml
 vendor/etc/factory.ini
 vendor/etc/fstb.cfg
 
+# Keymaster - from selene-user 13 TP1A.220624.014 V14.0.7.0.TKUMIXM release-keys
+vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod|accd31189fe22ebcb175cf9e4f3793eb35787bf2
+vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc|3d16915806df3134f1d220c21ef56d7b9964dc31
+vendor/lib/libTEECommon.so|626e2b259cde0b2040d89af7593bb0d66c9dbe33
+vendor/lib64/libTEECommon.so|e05e083e68f6ff206066ff97a687188e6f7d52c3
+
 # TEE
 vendor/bin/bp_kmsetkey_ca
 vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
-vendor/lib/libTEECommon.so
 vendor/lib/libimsg_log.so
 vendor/lib/libteeclientjni.so
 vendor/lib/libteeclientjni@1.1.so
 vendor/lib/libteei_daemon_vfs.so
-vendor/lib64/libTEECommon.so
 vendor/lib64/libimsg_log.so
 vendor/lib64/libteeclientjni.so
 vendor/lib64/libteeclientjni@1.1.so
