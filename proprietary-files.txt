@@ -182,7 +182,6 @@ vendor/etc/audio_param_global/VOW_ParamUnitDesc.xml
 vendor/etc/audio_param_global/VoWVoiceCommand_AudioParam.xml
 vendor/etc/audio_param_global/VoWVoiceCommand_ParamUnitDesc.xml
 vendor/etc/init/audiocmdservice_atci.rc
-vendor/etc/aurisys_config.xml
 vendor/lib/hw/audio.r_submix.mt6768.so
 vendor/lib/lib_iir.so
 vendor/lib/lib_speech_enh.so
