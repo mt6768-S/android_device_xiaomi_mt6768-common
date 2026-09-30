@@ -868,7 +868,7 @@ lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
 lib64/libvsim-adaptor-client.so
 lib64/libvt_avsync.so
--priv-app/ImsService/ImsService.apk
+-priv-app/ImsService/ImsService.apk|6663464f3f38e9834bf08aa51ac536e5341db300
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.dmc@1.1.so
 system_ext/lib64/vendor.mediatek.hardware.dmc@1.2.so
